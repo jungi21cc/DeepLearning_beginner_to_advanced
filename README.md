@@ -1,6 +1,7 @@
-# DeepLearning
+# deep-learning beginner to advanced
 
-deep-learning beginner to advanced
+![alt text](/image/Deep_Learning.png "cover_image")
+
 
 # tensorflow tutorials
 
