@@ -2,9 +2,19 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 26,
+   "execution_count": 1,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/home/jk/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.\n",
+      "  from ._conv import register_converters as _register_converters\n",
+      "Using TensorFlow backend.\n"
+     ]
+    }
+   ],
    "source": [
     "from sklearn import model_selection, metrics\n",
     "from sklearn.preprocessing import MinMaxScaler\n",
@@ -19,7 +29,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 27,
+   "execution_count": 10,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -93,7 +103,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 28,
+   "execution_count": 11,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -119,7 +129,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 29,
+   "execution_count": 13,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -167,7 +177,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 30,
+   "execution_count": 16,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -227,7 +237,77 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 32,
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class Machine():\n",
+    "    def __init__(self, X, y, nb_classes = 2, fig=True):\n",
+    "        self.nb_classes = nb_classes\n",
+    "        self.set_data(X, y)\n",
+    "        self.set_model()\n",
+    "        self.fig = fig\n",
+    "        \n",
+    "    def set_data(self, X, y):\n",
+    "        nb_classes = self.nb_classes\n",
+    "        self.data = Dataset(X, y, nb_classes)\n",
+    "        print('data.input_shape', self.data.input_shape)\n",
+    "        \n",
+    "    def set_model(self):\n",
+    "        nb_classes = self.nb_classes\n",
+    "        data = self.data\n",
+    "        self.model = CNN(nb_classes=nb_classes, in_shape=data.input_shape)\n",
+    "        \n",
+    "    def fit(self, epochs=10, batch_size=128, verbos=1):\n",
+    "        data = self.data\n",
+    "        model = self.model\n",
+    "        \n",
+    "        history = model.fit(data.X_train, data.Y_train, batch_size=batch_size, epochs = epochs, verbos = verbose,\n",
+    "                           validation_data=(data.X_test, data.Y_test))\n",
+    "        return history\n",
+    "    \n",
+    "    def run(self, epochs=100, batch_size=128, verbose=1):\n",
+    "        data = self.data\n",
+    "        model = self.model\n",
+    "        fig = self.fig\n",
+    "        \n",
+    "        history = self.fit(epochs=epochs, batch_size=batch_size, verbose = 1)\n",
+    "        \n",
+    "        score = model.evaluate(data.X_test, data.Y_test, verbose=0)\n",
+    "        \n",
+    "        print('confusion matrix')\n",
+    "    \n",
+    "        Y_test_pred = model.predict(data.X_test, verbose=0)\n",
+    "        y_test_pred = np.argmax(Y_test_pred, axis=1)\n",
+    "        print(metrics.confusion_matrix(data.y_test, y_test_pred))\n",
+    "        \n",
+    "        print('test score:', score[0])\n",
+    "        print('test accuracy:', score[1])\n",
+    "        \n",
+    "        suffix = unique_filename('datatime')\n",
+    "        foldname = 'output_' + suffix\n",
+    "        os.makedirs(foldname)\n",
+    "        save_history_history('history_history.npy', history.history, fold=foldname)\n",
+    "        model.save_weights(os.path.join(foldname, 'dl_model.h5'))\n",
+    "        print(\"output result are saved in\", foldname)\n",
+    "        \n",
+    "        if fig:\n",
+    "            plt.figure(figsize=(12,4))\n",
+    "            plt.subplot(1,2,1)\n",
+    "            plot_acc(history)\n",
+    "            plt.subplot(1,2,2)\n",
+    "            plot_loss(history)\n",
+    "            plt.show()\n",
+    "            \n",
+    "        self.history = history\n",
+    "        \n",
+    "        return foldname\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -239,46 +319,26 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 40,
+   "execution_count": 25,
    "metadata": {},
    "outputs": [
     {
-     "ename": "NameError",
-     "evalue": "name 'true' is not defined",
+     "ename": "TypeError",
+     "evalue": "__init__() missing 2 required positional arguments: 'X' and 'y'",
      "output_type": "error",
      "traceback": [
       "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
-      "\u001b[0;32m<ipython-input-40-760983813b12>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0mkeraspp\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0maicnn\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
-      "\u001b[0;32m~/dev/DeepLearning_beginner_to_advanced/4.convolutional_neural_network/keraspp/aicnn.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m    295\u001b[0m   \"toc\": {\n\u001b[1;32m    296\u001b[0m    \u001b[0;34m\"nav_menu\"\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0;34m{\u001b[0m\u001b[0;34m}\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 297\u001b[0;31m    \u001b[0;34m\"number_sections\"\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mtrue\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    298\u001b[0m    \u001b[0;34m\"sideBar\"\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mtrue\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    299\u001b[0m    \u001b[0;34m\"skip_h1_title\"\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mtrue\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-      "\u001b[0;31mNameError\u001b[0m: name 'true' is not defined"
-     ]
-    }
-   ],
-   "source": [
-    "from keraspp import aicnn"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 34,
-   "metadata": {},
-   "outputs": [
-    {
-     "ename": "NameError",
-     "evalue": "name 'aicnn' is not defined",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
-      "\u001b[0;32m<ipython-input-34-4aa19ecb0910>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0;32mclass\u001b[0m \u001b[0mMachine\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0maicnn\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mMachine\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0m__init__\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m         \u001b[0;34m(\u001b[0m\u001b[0mX\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0my\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mx_test\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0my_test\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mdatasets\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcifar10\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mload_data\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m         \u001b[0msuper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m__init__\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mX\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0my\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mnb_classes\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m10\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-      "\u001b[0;31mNameError\u001b[0m: name 'aicnn' is not defined"
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-25-d3e31bc14350>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0;32mclass\u001b[0m \u001b[0mMachine\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mMachine\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0m__init__\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m         \u001b[0;34m(\u001b[0m\u001b[0mX\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0my\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mx_test\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0my_test\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mdatasets\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcifar10\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mload_data\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m         \u001b[0msuper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m__init__\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mX\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0my\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mnb_classes\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m10\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m<ipython-input-25-d3e31bc14350>\u001b[0m in \u001b[0;36mMachine\u001b[0;34m()\u001b[0m\n\u001b[1;32m     10\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     11\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0m__name__\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m'__main__'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 12\u001b[0;31m         \u001b[0mmain\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;32m<ipython-input-25-d3e31bc14350>\u001b[0m in \u001b[0;36mmain\u001b[0;34m()\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      7\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mmain\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 8\u001b[0;31m         \u001b[0mm\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mMachine\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      9\u001b[0m         \u001b[0mm\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrun\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     10\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mTypeError\u001b[0m: __init__() missing 2 required positional arguments: 'X' and 'y'"
      ]
     }
    ],
    "source": [
     "\n",
-    "class Machine(aicnn.Machine):\n",
+    "class Machine(Machine):\n",
     "    def __init__(self):\n",
     "        (X, y), (x_test, y_test) = datasets.cifar10.load_data()\n",
     "        super().__init__(X, y, nb_classes=10)\n",
