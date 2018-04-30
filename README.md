@@ -21,7 +21,7 @@
 
 - [NLP를 위한 딥러닝 가이드](http://docs.likejazz.com/deep-learning-for-nlp/)
 
-# [CS20 tensorflow implementation](/tensorflow/CS20_Tensorflow_for_Deep_learning_Research)
+# CS20 tensorflow implementation [source code](/tensorflow/CS20_Tensorflow_for_Deep_learning_Research)
 
 - 01_overview tensorflow
 - 02_operations
@@ -35,13 +35,22 @@
 - 10_Recurrent Neural Networks
 - 11_Seq2Seq with Attention
 
-# [keras deep learning algorithm implementation](/keras)
+# keras deep learning algorithm implementation [source code](/keras)
 
 - Neural Network
-- Deep Neural Network
+
 - Convolutaional Neural Network
+
+AlexNet, VGG16, ResNet
+
 - Recurrent Neural Network
+
 - Auto Encoder
+
 - Generative Adversarial Network
+
+GAN, DCGAN
+
 - U-Net
+
 - Advanced applications
