@@ -21,10 +21,9 @@
 
 - [NLP를 위한 딥러닝 가이드](http://docs.likejazz.com/deep-learning-for-nlp/)
 
-# CS20 tensorflow implementation 
+# Stanford Univ CS20 Tensorflow for Deep Learning Research
 
-- [source code](/tensorflow/CS20_Tensorflow_for_Deep_learning_Research)
-- 01_overview tensorflow
+- [01_overview tensorflow](/tensorflow/CS20_Tensorflow_for_Deep_learning_Research/01_overview_tensorflow.ipynb)
 - 02_operations
 - 03_linear and logistic regression
 - 04_earger execution
@@ -36,7 +35,13 @@
 - 10_Recurrent Neural Networks
 - 11_Seq2Seq with Attention
 
-# keras deep learning algorithm 
+# Stanford Univ CS224d  & CMU CS11 Deep Learning for Natural Language Processing
+
+- [01_Introduction_to_NLP_and_Deep_Learning](/tensorflow/CS224_NLP_with_Deep_Learning/01_Introduction_to_NLP_and_Deep_Learning)
+
+
+
+# keras deep learning implementation examples
 
 - [source code](/keras)
 - Neural Network
