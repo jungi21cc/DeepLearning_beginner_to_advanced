@@ -3,7 +3,7 @@
 ![alt text](/image/Deep_Learning.png "cover_image")
 
 
-# Deep learning basic
+# Deep Learning Lecture and materials
 
 - [CS 20: Tensorflow for Deep Learning Research](https://web.stanford.edu/class/cs20si/)
 
