@@ -1,5 +1,6 @@
 #graph
 *graphs*
+*.idea/
 
 # ignore data folder
 /data/
