@@ -24,7 +24,7 @@
 # Stanford Univ CS20 Tensorflow for Deep Learning Research
 
 - [01_overview tensorflow](/tensorflow/CS20_Tensorflow_for_Deep_learning_Research/01_overview_tensorflow.ipynb)
-- 02_operations
+- [02_operations](/tensorflow/CS20_Tensorflow_for_Deep_learning_Research/02_operations.ipynb)
 - 03_linear and logistic regression
 - 04_earger execution
 - 05_variable sharing and managing experiments
@@ -38,6 +38,15 @@
 # Stanford Univ CS224d  & CMU CS11 Deep Learning for Natural Language Processing
 
 - [01_Introduction_to_NLP_and_Deep_Learning](/tensorflow/CS224_NLP_with_Deep_Learning/01_Introduction_to_NLP_and_Deep_Learning)
+- [02_Word_Embedding](/tensorflow/CS224_NLP_with_Deep_Learning/02_word_vectors)
+
+
+
+# Deep Learing for NLP reading materials & papers
+
+- [02 Word2Vec Tutorial - The Skip-Gram Model](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
+- [02 Efficient Estimation of Word Representations in
+Vector Space, 2013](http://arxiv.org/pdf/1301.3781.pdf)
 
 
 
