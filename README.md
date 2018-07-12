@@ -25,7 +25,7 @@
 
 - [01_overview tensorflow](/tensorflow/CS20_Tensorflow_for_Deep_learning_Research/01_overview_tensorflow.ipynb)
 - [02_operations](/tensorflow/CS20_Tensorflow_for_Deep_learning_Research/02_operations.ipynb)
-- 03_linear and logistic regression
+- [03_linear_and_logistic_regression](/tensorflow/CS20_Tensorflow_for_Deep_learning_Research/03_regressions.ipynb)
 - 04_earger execution
 - 05_variable sharing and managing experiments
 - 06_introduction to ConvNet
@@ -47,6 +47,19 @@
 - [02 Word2Vec Tutorial - The Skip-Gram Model](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
 - [02 Efficient Estimation of Word Representations in
 Vector Space, 2013](http://arxiv.org/pdf/1301.3781.pdf)
+
+
+
+# Stanford Univ CS224d  Convolutional Neural Networks for Visual Recognition
+
+- 01_cource_introduction
+- 02_image_classification
+- 03_loss_function_and_optimization
+- 04_introduction_to_neural_networks
+- 05_convolutional_neural_networks
+- 06_training_neural_networks_part1
+- 07_training_neural_networks_part2
+
 
 
 
