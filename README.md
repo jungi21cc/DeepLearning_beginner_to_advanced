@@ -1,4 +1,4 @@
-# deep-learning beginner to advanced
+# Deep Learning Beginner to Advanced
 
 ![alt text](/image/Deep_Learning.png "cover_image")
 
@@ -21,11 +21,13 @@
 
 - [NLP를 위한 딥러닝 가이드](http://docs.likejazz.com/deep-learning-for-nlp/)
 
+
+
 # Stanford Univ CS20 Tensorflow for Deep Learning Research
 
-- [01_overview tensorflow](/tensorflow/CS20_Tensorflow_for_Deep_learning_Research/01_overview_tensorflow.ipynb)
-- [02_operations](/tensorflow/CS20_Tensorflow_for_Deep_learning_Research/02_operations.ipynb)
-- [03_linear_and_logistic_regression](/tensorflow/CS20_Tensorflow_for_Deep_learning_Research/03_regressions.ipynb)
+- [01_overview tensorflow](/CS20_Tensorflow_for_Deep_learning_Research/01_overview_tensorflow.ipynb)
+- [02_operations](/CS20_Tensorflow_for_Deep_learning_Research/02_operations.ipynb)
+- [03_linear_and_logistic_regression](/CS20_Tensorflow_for_Deep_learning_Research/03_regressions.ipynb)
 - 04_earger execution
 - 05_variable sharing and managing experiments
 - 06_introduction to ConvNet
@@ -35,10 +37,12 @@
 - 10_Recurrent Neural Networks
 - 11_Seq2Seq with Attention
 
+
+
 # Stanford Univ CS224d  & CMU CS11 Deep Learning for Natural Language Processing
 
-- [01_Introduction_to_NLP_and_Deep_Learning](/tensorflow/CS224_NLP_with_Deep_Learning/01_Introduction_to_NLP_and_Deep_Learning)
-- [02_Word_Embedding](/tensorflow/CS224_NLP_with_Deep_Learning/02_word_vectors)
+- [01_Introduction_to_NLP_and_Deep_Learning](/CS224_NLP_with_Deep_Learning/01_Introduction_to_NLP_and_Deep_Learning)
+- [02_Word_Embedding](/CS224_NLP_with_Deep_Learning/02_word_vectors)
 
 
 
@@ -50,7 +54,7 @@ Vector Space, 2013](http://arxiv.org/pdf/1301.3781.pdf)
 
 
 
-# Stanford Univ CS224d  Convolutional Neural Networks for Visual Recognition
+# Stanford Univ CS231n  Convolutional Neural Networks for Visual Recognition (comming soon)
 
 - 01_cource_introduction
 - 02_image_classification
@@ -63,7 +67,7 @@ Vector Space, 2013](http://arxiv.org/pdf/1301.3781.pdf)
 
 
 
-# keras deep learning implementation examples
+# Keras Deep learning implementation examples
 
 - [source code](/keras)
 - Neural Network
