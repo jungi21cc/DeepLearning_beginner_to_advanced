@@ -29,7 +29,7 @@
 - [02_operations](/CS20_Tensorflow_for_Deep_learning_Research/02_operations.ipynb)
 - [03_linear_and_logistic_regression](/CS20_Tensorflow_for_Deep_learning_Research/03_regressions.ipynb)
 - 04_earger execution
-- 05_variable sharing and managing experiments
+- [05_variable sharing and managing experiments](/CS20_Tensorflow_for_Deep_learning_Research/05_managing_experiment.ipynb)
 - 06_introduction to ConvNet
 - 07_ConvNet in Tensorflow
 - 08_Convolutaional Neural Networks, Generative Adeversarial Networks
@@ -48,8 +48,10 @@
 
 # Deep Learing for NLP reading materials & papers
 
-- [02 Word2Vec Tutorial - The Skip-Gram Model](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
-- [02 Efficient Estimation of Word Representations in
+- [02 word2vec]
+
+- [Word2Vec Tutorial - The Skip-Gram Model](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
+- [Efficient Estimation of Word Representations in
 Vector Space, 2013](http://arxiv.org/pdf/1301.3781.pdf)
 
 
