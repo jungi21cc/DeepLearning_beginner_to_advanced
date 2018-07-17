@@ -31,7 +31,7 @@
 - 04_earger execution
 - [05_variable sharing and managing experiments](/CS20_Tensorflow_for_Deep_learning_Research/05_managing_experiment.ipynb)
 - 06_introduction to ConvNet
-- 07_ConvNet in Tensorflow
+- [07_ConvNet in Tensorflow](/CS20_Tensorflow_for_Deep_learning_Research/07_Covnets_in_tensorflow.ipynb)
 - 08_Convolutaional Neural Networks, Generative Adeversarial Networks
 - 09_Variational Auto Encoder
 - 10_Recurrent Neural Networks
