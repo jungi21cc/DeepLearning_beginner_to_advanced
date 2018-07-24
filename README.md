@@ -41,17 +41,13 @@
 
 # Stanford Univ CS224d  & CMU CS11 Deep Learning for Natural Language Processing
 
-- [01_Introduction_to_NLP_and_Deep_Learning](/CS224_NLP_with_Deep_Learning/01_Introduction_to_NLP_and_Deep_Learning)
-- [02_Word_Embedding](/CS224_NLP_with_Deep_Learning/02_word_vectors)
+- [01_Introduction_to_NLP_and_Deep_Learning](/CS224_NLP_with_Deep_Learning/01_Introduction_to_NLP_and_Deep_Learning/)
+- [02_Word_Embedding](/CS224_NLP_with_Deep_Learning/02_word_vectors/)
 
+- reading materials & papers
 
-
-# Deep Learing for NLP reading materials & papers
-
-- [02 word2vec]
-
-- [Word2Vec Tutorial - The Skip-Gram Model](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
-- [Efficient Estimation of Word Representations in
+    - [Word2Vec Tutorial - The Skip-Gram Model](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
+    - [Efficient Estimation of Word Representations in
 Vector Space, 2013](http://arxiv.org/pdf/1301.3781.pdf)
 
 
