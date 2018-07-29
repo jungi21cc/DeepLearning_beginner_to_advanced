@@ -32,7 +32,11 @@
 - [05_variable sharing and managing experiments](/CS20_Tensorflow_for_Deep_learning_Research/05_managing_experiment.ipynb)
 - 06_introduction to ConvNet
 - [07_ConvNet in Tensorflow](/CS20_Tensorflow_for_Deep_learning_Research/07_Covnets_in_tensorflow.ipynb)
-- 08_Convolutaional Neural Networks, Generative Adeversarial Networks
+    -  [ImageNet Classification with Deep Convolutional
+Neural Networks, 2012](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
+    -  [Deep Residual Learning for Image Recognition, 2015](https://arxiv.org/pdf/1512.03385.pdf)
+    -  [Going Deeper with Convolutions, 2015](https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf)    
+- 08_Generative Adeversarial Networks
 - 09_Variational Auto Encoder
 - 10_Recurrent Neural Networks
 - 11_Seq2Seq with Attention

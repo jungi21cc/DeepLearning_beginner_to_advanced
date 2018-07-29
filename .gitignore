@@ -1,7 +1,11 @@
 *checkpoints*
 #graph
 *graphs*
+*graphs/
 *.idea/
+/CS20_Tensorflow_for_Deep_learning_Research/graphs/*
+/CS20_Tensorflow_for_Deep_learning_Research/checkpoints/*
+/CS20_Tensorflow_for_Deep_learning_Research/graphs/*
 
 # ignore data folder
 /data/
