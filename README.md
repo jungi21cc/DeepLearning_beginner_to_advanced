@@ -31,7 +31,11 @@
 - 04_earger execution
 - [05_variable sharing and managing experiments](/CS20_Tensorflow_for_Deep_learning_Research/05_managing_experiment.ipynb)
 - 06_introduction to ConvNet
-- [07_ConvNet in Tensorflow](/CS20_Tensorflow_for_Deep_learning_Research/07_Covnets_in_tensorflow.ipynb)
+- [07_ConvNet in Tensorflow](/CS20_Tensorflow_for_Deep_learning_Research/07_01_Covnets_in_tensorflow.ipynb)
+- [07_ConvNet with Slim](/CS20_Tensorflow_for_Deep_learning_Research/07_02_CNN_with_Slimn.ipynb)
+- 07_ConvNet with Save_Restore
+- 07_ResNet
+- 07_VGG_Slim
     -  [ImageNet Classification with Deep Convolutional
 Neural Networks, 2012](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
     -  [Deep Residual Learning for Image Recognition, 2015](https://arxiv.org/pdf/1512.03385.pdf)
@@ -53,6 +57,12 @@ Neural Networks, 2012](https://papers.nips.cc/paper/4824-imagenet-classification
 Vector Space, 2013](http://arxiv.org/pdf/1301.3781.pdf)
 
 - 03_neural_networks
+    - [backpropagation](http://cs231n.github.io/optimization-2/)
+    - [Review of differential calculus theory](http://web.stanford.edu/class/cs224n/readings/review-differential-calculus.pdf)
+- 04_recurrent_neural_networks_and_language_models
+    - [Recurrent Neural Networks Tutorial](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)
+- 05_vanishing_gradients_and_fancy_RNNs
+    - [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
 # Stanford Univ CS231n  Convolutional Neural Networks for Visual Recognition (comming soon)
 
