@@ -21,6 +21,10 @@
 
 - [NLP를 위한 딥러닝 가이드](http://docs.likejazz.com/deep-learning-for-nlp/)
 
+- [모두의 연구소 플입스쿨 CS20](https://github.com/modulabs/modu-tensorflow)
+
+- [SuaLab Research Blog](http://research.sualab.com/)
+
 
 
 # Stanford Univ CS20 Tensorflow for Deep Learning Research
@@ -33,9 +37,11 @@
 - 06_introduction to ConvNet
 - [07_ConvNet in Tensorflow](/CS20_Tensorflow_for_Deep_learning_Research/07_01_Covnets_in_tensorflow.ipynb)
 - [07_ConvNet with Slim](/CS20_Tensorflow_for_Deep_learning_Research/07_02_CNN_with_Slimn.ipynb)
-- 07_ConvNet with Save_Restore
+- [07_ConvNet with Save_and_Restore](/CS20_Tensorflow_for_Deep_learning_Research/07_03_ConvNet with Save_and_Restore.ipynb)
+- [07_ConvNet overfitting handling](/CS20_Tensorflow_for_Deep_learning_Research/07_04_CNN_overfitting_handling.ipynb)
 - 07_ResNet
 - 07_VGG_Slim
+- 07_AlexNet
     -  [ImageNet Classification with Deep Convolutional
 Neural Networks, 2012](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
     -  [Deep Residual Learning for Image Recognition, 2015](https://arxiv.org/pdf/1512.03385.pdf)
