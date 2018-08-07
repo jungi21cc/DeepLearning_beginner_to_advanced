@@ -6,6 +6,7 @@
 /CS20_Tensorflow_for_Deep_learning_Research/graphs/*
 /CS20_Tensorflow_for_Deep_learning_Research/checkpoints/*
 /CS20_Tensorflow_for_Deep_learning_Research/graphs/*
+/CS20_Tensorflow_for_Deep_learning_Research/vgg_16_ckpt
 
 # ignore data folder
 /data/
