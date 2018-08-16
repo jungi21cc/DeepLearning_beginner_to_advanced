@@ -34,19 +34,22 @@
 - [03_linear_and_logistic_regression](/CS20_Tensorflow_for_Deep_learning_Research/03_regressions.ipynb)
 - 04_earger execution
 - [05_variable sharing and managing experiments](/CS20_Tensorflow_for_Deep_learning_Research/05_managing_experiment.ipynb)
-- 06_introduction to ConvNet
-- [07_ConvNet in Tensorflow](/CS20_Tensorflow_for_Deep_learning_Research/07_01_Covnets_in_tensorflow.ipynb)
-- [07_ConvNet with Slim](/CS20_Tensorflow_for_Deep_learning_Research/07_02_CNN_with_Slimn.ipynb)
-- [07_ConvNet with Save_and_Restore](/CS20_Tensorflow_for_Deep_learning_Research/07_03_ConvNet with Save_and_Restore.ipynb)
-- [07_ConvNet overfitting handling](/CS20_Tensorflow_for_Deep_learning_Research/07_04_CNN_overfitting_handling.ipynb)
-- 07_ResNet
-- 07_VGG_Slim
-- 07_AlexNet
+- 06_ConvNet in Tensorflow
+- 06_ConvNet with Slim
+- 06_ResNet
+- 06_VGG_Slim
+- 06_AlexNet
     -  [ImageNet Classification with Deep Convolutional
 Neural Networks, 2012](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
     -  [Deep Residual Learning for Image Recognition, 2015](https://arxiv.org/pdf/1512.03385.pdf)
     -  [Going Deeper with Convolutions, 2015](https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf)    
+- 07_Style transfer
+    - [A Neural Algorithm of Artistic Style, 2015](https://arxiv.org/pdf/1508.06576.pdf)    
 - 08_Generative Adeversarial Networks
+    - [Generative Adversarial Nets, 2014](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf)    
+    - [UNSUPERVISED REPRESENTATION LEARNING
+WITH DEEP CONVOLUTIONAL
+GENERATIVE ADVERSARIAL NETWORKS, 2016](https://arxiv.org/pdf/1511.06434.pdf)    
 - 09_Variational Auto Encoder
 - 10_Recurrent Neural Networks
 - 11_Seq2Seq with Attention
