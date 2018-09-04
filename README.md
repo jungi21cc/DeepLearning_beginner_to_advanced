@@ -11,6 +11,8 @@
 
 - [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/syllabus.html)
 
+- [UFDL Tutorial](http://ufldl.stanford.edu/tutorial/)
+
 - [모두를 위한 머신러닝/딥러닝 강의 - 김성훈](https://www.youtube.com/watch?v=BS6O0zOGX4E&list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm&index=1)
 
 - [코딩셰프의 3분 딥러닝, 케라스맛](https://github.com/jskDr/keraspp)
@@ -47,9 +49,7 @@ Neural Networks, 2012](https://papers.nips.cc/paper/4824-imagenet-classification
     - [A Neural Algorithm of Artistic Style, 2015](https://arxiv.org/pdf/1508.06576.pdf)    
 - 08_Generative Adeversarial Networks
     - [Generative Adversarial Nets, 2014](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf)    
-    - [UNSUPERVISED REPRESENTATION LEARNING
-WITH DEEP CONVOLUTIONAL
-GENERATIVE ADVERSARIAL NETWORKS, 2016](https://arxiv.org/pdf/1511.06434.pdf)    
+- 09_Auto Encoder
 - 09_Variational Auto Encoder
 - 10_Recurrent Neural Networks
 - 11_Seq2Seq with Attention
