@@ -58,13 +58,11 @@ Neural Networks, 2012](https://papers.nips.cc/paper/4824-imagenet-classification
 
 # Stanford Univ CS224d  & CMU CS11 Deep Learning for Natural Language Processing
 
-- [01_Introduction_to_NLP_and_Deep_Learning](/CS224_NLP_with_Deep_Learning/01_Introduction_to_NLP_and_Deep_Learning)
-- [02_Word_Embedding](/CS224_NLP_with_Deep_Learning/02_word_vectors)
-
+- 01_Introduction_to_NLP_and_Deep_Learning
+- 02_Word_Embedding
     - [Word2Vec Tutorial - The Skip-Gram Model](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
     - [Efficient Estimation of Word Representations in
 Vector Space, 2013](http://arxiv.org/pdf/1301.3781.pdf)
-
 - 03_neural_networks
     - [backpropagation](http://cs231n.github.io/optimization-2/)
     - [Review of differential calculus theory](http://web.stanford.edu/class/cs224n/readings/review-differential-calculus.pdf)
