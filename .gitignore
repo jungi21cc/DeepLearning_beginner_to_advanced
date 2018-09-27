@@ -12,6 +12,7 @@
 /data/
 *datasets*
 *data*
+/CS20_Tensorflow_for_Deep_learning_Research/simple_examples/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
